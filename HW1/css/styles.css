@@ -1,0 +1,171 @@
+/* Base Layout and Typography */
+body {
+    background-color: #0f172a;
+    color: #cbd5e1;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px 20px 20px;
+}
+
+.main-title {
+    font-size: 2.8em;
+    color: #f8fafc;
+    margin: 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* Navigation Menu */
+nav {
+    text-align: center;
+    margin: 20px 0 50px 0;
+    background-color: #1e293b;
+    padding: 15px;
+}
+
+nav a {
+    padding: 10px 25px;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #94a3b8;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+nav a:hover,
+nav a.current {
+    color: #38bdf8;
+    border-bottom: 3px solid #38bdf8;
+    font-weight: bold;
+}
+
+/* Main Content Structure */
+#main-content {
+    max-width: 950px;
+    margin: 0 auto 60px auto;
+    padding: 40px;
+    background-color: #1e293b;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+h2 {
+    color: #38bdf8;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.15em;
+    margin-bottom: 25px;
+}
+
+mark {
+    background-color: #f59e0b;
+    color: #0f172a;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Image Configurations */
+.image-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.topic-img {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #334155;
+}
+
+/* Two-Column Grid Layout for Unsupervised Page */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.grid-col .topic-img {
+    width: 100%;
+}
+
+h2 {
+    color: #38bdf8;
+    font-size: 2em;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #38bdf8;
+}
+
+/* Algorithm Section */
+.algorithm-box {
+    background-color: #334155;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
+
+.algorithm-title {
+    color: #38bdf8;
+    margin-top: 0;
+    font-size: 1.4em;
+}
+
+.algorithm-description {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.algorithm-list {
+    padding-left: 20px;
+    line-height: 1.8;
+    font-size: 0.95em;
+    margin: 0;
+}
+
+/* Inner Flex Container with New CSS Properties */
+.flex-reverse-inner {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+/* Footer and Sources */
+.source-link {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #334155;
+    font-size: 0.95em;
+}
+
+.source-link a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+.source-link a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #0f172a;
+    color: #64748b;
+    font-size: 0.7em;
+    border-top: 1px solid #1e293b;
+}
