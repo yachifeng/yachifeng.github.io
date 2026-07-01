@@ -1,0 +1,108 @@
+Guided Lab: JavaScript Geography Quiz
+Checkpoint Responses
+
+Downloaded: 2026/7/1 下午2:45:25
+
+Started: 2026/7/1 下午1:52:37
+Completed: 2026/7/1 下午1:55:59
+Time spent: 3 minute(s), 22 second(s)
+Lesson 1: Set up the quiz page
+Question:
+Why does the textbox need an id value such as q1?
+
+Student response:
+The id="q1" is necessary because:
+1. JavaScript Selection: It gives the textbox a unique name so JavaScript can easily find it, grab the user's answer, and grade it.
+2. Uniqueness: It ensures Question 1 won't get mixed up with any other questions on the page.
+
+----------------------------------------
+
+Started: 2026/7/1 下午1:55:59
+Completed: 2026/7/1 下午2:09:56
+Time spent: 13 minute(s), 56 second(s)
+Lesson 2: Add Bootstrap and connect JavaScript
+Question:
+What event is the button listening for, and what function runs when that event happens?
+
+Student response:
+1. Event: The button is listening for a "click" event.
+2. Function: The gradeQuiz function runs when that event happens.
+
+----------------------------------------
+
+Started: 2026/7/1 下午2:09:56
+Completed: 2026/7/1 下午2:17:43
+Time spent: 7 minute(s), 48 second(s)
+Lesson 3: Validate the first question
+Question:
+Why do we need this line of code?
+
+Student response:
+We need this line of code to clear out the previous error message.
+It ensures that if the user fixes their mistake and submits the form again, the old "Question 1 was not answered" warning disappears.
+
+----------------------------------------
+
+Started: 2026/7/1 下午2:17:43
+Completed: 2026/7/1 下午2:27:31
+Time spent: 9 minute(s), 48 second(s)
+Lesson 4: Grade the first question
+Question:
+What is this line of code doing?
+
+Student response:
+This line of code inserts the newly created image (either the checkmark or the X mark) inside the HTML element with the ID markImg1, making the image actually appear on the webpage next to the question.
+
+----------------------------------------
+
+Started: 2026/7/1 下午2:27:31
+Completed: 2026/7/1 下午2:31:35
+Time spent: 4 minute(s), 4 second(s)
+Lesson 5: Add a dropdown question and refactor feedback
+Question:
+What value is stored in q2Response when the user selects Missouri, and why?
+
+Student response:
+1. Value: The value stored is "mo".
+2. Why: Because JavaScript retrieves the value from the <option> tag's value attribute (value="mo"), not the actual text ("Missouri") displayed to the user.
+
+----------------------------------------
+
+Started: 2026/7/1 下午2:31:35
+Completed: 2026/7/1 下午2:36:08
+Time spent: 4 minute(s), 33 second(s)
+Lesson 6: Add checkboxes and radio buttons
+Question:
+Why do the radio buttons all need the same name value?
+
+Student response:
+The radio buttons need the same name value (name="q4") to group them together.
+This tells the browser they belong to the same question, ensuring that the user can only select one option at a time. If you click a different one, the previous choice automatically unchecks.
+
+----------------------------------------
+
+Started: 2026/7/1 下午2:36:08
+Completed: 2026/7/1 下午2:40:48
+Time spent: 4 minute(s), 40 second(s)
+Lesson 7: Randomize radio button choices
+Question:
+What is the main reason for implementing the displayQ4Choices() function?
+
+Student response:
+The main reason for implementing the displayQ4Choices() function is to randomize (shuffle) the order of the answer choices every time the page loads.
+This makes the quiz more dynamic and prevents cheating or memorization based on choice positions.
+
+----------------------------------------
+
+Started: 2026/7/1 下午2:40:48
+Completed: 2026/7/1 下午2:45:09
+Time spent: 4 minute(s), 21 second(s)
+Lesson 8: Store total attempts with localStorage
+Question:
+Why does the attempts variable reset after a page reload unless we save it in localStorage?
+
+Student response:
+Because regular JavaScript variables only exist in the browser's temporary memory (RAM).
+When you reload the page, that memory is completely cleared, resetting the variables. localStorage is needed to save the data to the browser's permanent storage so it survives a reload.
+
+----------------------------------------
