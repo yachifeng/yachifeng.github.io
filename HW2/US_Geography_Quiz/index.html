@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>US Geography Quiz - HW 2</title>
+
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+</head>
+
+<body class="text-center bg-light">
+
+  <div class="container my-5 p-5 bg-white rounded shadow-sm" style="max-width: 850px;">
+    <h1 class="p-4 bg-info text-white rounded mb-5">US Geography Quiz</h1>
+
+    <!-- Q1 -->
+    <div class="mb-5">
+      <h3><span id="markImg1"></span> 1. What is the capital of California?</h3>
+      <input type="text" id="q1" class="form-control w-50 mx-auto mt-2">
+      <div id="q1Feedback" class="mt-2"></div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="mb-5">
+      <h3><span id="markImg2"></span> 2. What is the longest river in the US?</h3>
+      <select id="q2" class="form-select w-50 mx-auto mt-2">
+        <option value="">Select One</option>
+        <option value="ms">Mississippi</option>
+        <option value="mo">Missouri</option>
+        <option value="co">Colorado</option>
+        <option value="de">Delaware</option>
+      </select>
+      <div id="q2Feedback" class="mt-2"></div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="mb-5">
+      <h3><span id="markImg3"></span> 3. What presidents are carved into Mount Rushmore?</h3>
+
+      <input type="checkbox" id="q3_jackson">
+      <label for="q3_jackson" class="me-3">Jackson</label>
+
+      <input type="checkbox" id="q3_franklin">
+      <label for="q3_franklin" class="me-3">Franklin</label>
+
+      <input type="checkbox" id="q3_jefferson">
+      <label for="q3_jefferson" class="me-3">Jefferson</label>
+
+      <input type="checkbox" id="q3_roosevelt">
+      <label for="q3_roosevelt">Roosevelt</label>
+
+      <div id="q3Feedback" class="mt-2"></div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="mb-5">
+      <h3><span id="markImg4"></span> 4. What is the smallest US State?</h3>
+      <div id="q4Choices" class="mt-2"></div>
+      <div id="q4Feedback" class="mt-2"></div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="mb-5">
+      <h3><span id="markImg5"></span> 5. Which US state has the largest population?</h3>
+
+      <input type="radio" name="q5" id="q5_tx" value="Texas">
+      <label for="q5_tx" class="me-3">Texas</label>
+
+      <input type="radio" name="q5" id="q5_ca" value="California">
+      <label for="q5_ca" class="me-3">California</label>
+
+      <input type="radio" name="q5" id="q5_ny" value="New York">
+      <label for="q5_ny" class="me-3">New York</label>
+
+      <input type="radio" name="q5" id="q5_fl" value="Florida">
+      <label for="q5_fl">Florida</label>
+
+      <div id="q5Feedback" class="mt-2"></div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="mb-5">
+      <h3><span id="markImg6"></span> 6. What is the capital of New York State?</h3>
+      <input type="text" id="q6" class="form-control w-50 mx-auto mt-2">
+      <div id="q6Feedback" class="mt-2"></div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="mb-5">
+      <h3><span id="markImg7"></span> 7. Largest state (contiguous US)?</h3>
+      <select id="q7" class="form-select w-50 mx-auto mt-2">
+        <option value="">Select One</option>
+        <option value="ca">California</option>
+        <option value="tx">Texas</option>
+        <option value="mt">Montana</option>
+        <option value="fl">Florida</option>
+      </select>
+      <div id="q7Feedback" class="mt-2"></div>
+    </div>
+
+    <!-- Q8 -->
+    <div class="mb-5">
+      <h3><span id="markImg8"></span> 8. Pacific Ocean states (select all)</h3>
+
+      <input type="checkbox" id="q8_wa">
+      <label for="q8_wa" class="me-3">Washington</label>
+
+      <input type="checkbox" id="q8_fl">
+      <label for="q8_fl" class="me-3">Florida</label>
+
+      <input type="checkbox" id="q8_or">
+      <label for="q8_or" class="me-3">Oregon</label>
+
+      <input type="checkbox" id="q8_ga">
+      <label for="q8_ga">Georgia</label>
+
+      <div id="q8Feedback" class="mt-2"></div>
+    </div>
+
+    <!-- Q9 -->
+    <div class="mb-5">
+      <h3><span id="markImg9"></span> 9. Alaska is the northernmost state.</h3>
+
+      <input type="radio" name="q9" id="q9_true" value="True">
+      <label for="q9_true" class="me-3">True</label>
+
+      <input type="radio" name="q9" id="q9_false" value="False">
+      <label for="q9_false">False</label>
+
+      <div id="q9Feedback" class="mt-2"></div>
+    </div>
+
+    <!-- Q10 -->
+    <div class="mb-5">
+      <h3><span id="markImg10"></span> 10. Alcatraz Island is in?</h3>
+
+      <input type="radio" name="q10" id="q10_ny" value="New York">
+      <label for="q10_ny" class="me-3">New York</label>
+
+      <input type="radio" name="q10" id="q10_fl" value="Florida">
+      <label for="q10_fl" class="me-3">Florida</label>
+
+      <input type="radio" name="q10" id="q10_ca" value="California">
+      <label for="q10_ca" class="me-3">California</label>
+
+      <input type="radio" name="q10" id="q10_hi" value="Hawaii">
+      <label for="q10_hi">Hawaii</label>
+
+      <div id="q10Feedback" class="mt-2"></div>
+    </div>
+
+    <hr>
+
+    <h3 id="validationFdbk" class="bg-danger text-white p-2 rounded"></h3>
+
+    <button class="btn btn-outline-primary btn-lg mt-3">Submit Quiz</button>
+
+    <h2 id="totalScore" class="fw-bold mt-3"></h2>
+    <h3 id="congratsMessage" class="text-success fw-bold"></h3>
+    <h4 id="totalAttempts" class="text-muted"></h4>
+
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
