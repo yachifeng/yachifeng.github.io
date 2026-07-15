@@ -1,0 +1,33 @@
+<%- include('partials/head') %>
+<%- include('partials/nav') %>
+
+<div class="text-center mb-4">
+    <h1 class="fw-bold text-warning">NASA Picture of the Day</h1>
+    <p class="text-white-50">Date: <%= formattedDate %></p>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="card bg-black text-white border-warning mb-4 shadow">
+            <% if (nasaData.media_type === 'image') { %>
+                <img src="<%= nasaData.url %>" class="card-img-top img-fluid" alt="<%= nasaData.title %>">
+            <% } else { %>
+                <div class="ratio ratio-16x9">
+                    <iframe src="<%= nasaData.url %>" allowfullscreen></iframe>
+                </div>
+            <% } %>
+            
+            <div class="card-body">
+                <h3 class="card-title text-warning fw-bold mt-2"><%= nasaData.title %></h3>
+                <p class="card-text mt-3" style="text-align: justify; line-height: 1.6;">
+                    <%= nasaData.explanation %>
+                </p>
+                <% if (nasaData.copyright) { %>
+                    <p class="card-text"><small class="text-muted">© <%= nasaData.copyright.replace(/\n/g, ' ') %></small></p>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer') %>

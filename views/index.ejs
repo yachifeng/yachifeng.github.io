@@ -1,0 +1,13 @@
+<%- include('partials/head') %>
+<%- include('partials/nav') %>
+
+<div class="container home-bg d-flex align-items-center justify-content-center shadow-lg" style="background-image: url('<%= randomBgUrl %>');">
+    <div class="text-center p-5 rounded-3 glass-card col-md-8">
+        <h1 class="display-3 fw-bold text-warning mb-3">Explore the Solar System</h1>
+        <p class="lead text-white mb-4">An interactive web application built with Node.js and Express to browse scientific data about planets and fetch NASA's Picture of the Day.</p>
+        <hr class="my-4 border-secondary">
+        <p class="text-white-50">Select a planet from the navigation bar above to begin your journey.</p>
+    </div>
+</div>
+
+<%- include('partials/footer') %>

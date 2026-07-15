@@ -1,0 +1,80 @@
+<%- include('partials/head') %>
+<%- include('partials/nav') %>
+
+<div class="row align-items-center">
+    <div class="col-md-5 text-center mb-4 mb-md-0">
+        <% 
+            let displayImage = planetInfo.image;
+            const lowerPlanetName = (planetName || '').trim().toLowerCase();
+
+            if (lowerPlanetName === 'jupiter') {
+                displayImage = 'https://upload.wikimedia.org/wikipedia/commons/2/2b/Jupiter_and_its_shrunken_Great_Red_Spot.jpg';
+            } else if (lowerPlanetName === 'uranus') {
+                displayImage = 'https://upload.wikimedia.org/wikipedia/commons/3/3d/Uranus2.jpg';
+            } else if (lowerPlanetName === 'mars') {
+                displayImage = 'https://upload.wikimedia.org/wikipedia/commons/0/02/OSIRIS_Mars_true_color.jpg';
+            }
+        %>
+        <img
+            src="<%= displayImage %>"
+            alt="<%= planetName %>"
+            class="img-fluid rounded-3 shadow border border-secondary"
+            style="max-height: 400px;">
+    </div>
+
+    <div class="col-md-7">
+        <h1 class="display-4 fw-bold text-warning mb-3">
+            <%= planetName %>
+        </h1>
+
+        <p class="lead bg-dark p-3 rounded border border-secondary">
+            <%= planetInfo.description %>
+        </p>
+
+        <div class="card bg-black text-white border-secondary mt-4 shadow">
+            <div class="card-header bg-secondary fw-bold">
+                🪐 Scientific Data
+            </div>
+
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-black text-white border-secondary">
+                    <strong>Radius:</strong>
+                    <%= planetInfo.radius || 'N/A' %>
+                </li>
+
+                <li class="list-group-item bg-black text-white border-secondary">
+                    <strong>Number of Moons:</strong>
+                    <%= planetInfo.moons ?? planetInfo.numberOfMoons ?? '0' %>
+                </li>
+
+                <li class="list-group-item bg-black text-white border-secondary">
+                    <strong>Distance from Sun:</strong>
+                    <%= planetInfo.distanceFromSun || 'N/A' %>
+                </li>
+
+                <li class="list-group-item bg-black text-white border-secondary">
+                    <strong>Year Length:</strong>
+                    <%= planetInfo.yearLength || 'N/A' %>
+                </li>
+
+                <li class="list-group-item bg-black text-white border-secondary">
+                    <strong>Length of One Day:</strong>
+                    <%= planetInfo.oneEarthDay || 'N/A' %>
+                </li>
+
+                <li class="list-group-item bg-black text-white border-secondary">
+                    <strong>NASA Information:</strong>
+                    <% if (planetInfo.websiteLink) { %>
+                        <a href="<%= planetInfo.websiteLink %>" target="_blank" class="link-warning">
+                            Visit NASA Page
+                        </a>
+                    <% } else { %>
+                        N/A
+                    <% } %>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer') %>
