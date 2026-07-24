@@ -1,0 +1,97 @@
+/* Rule 1: Page layout and background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #eef2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Rule 2: Main container style */
+.card-container {
+    background-color: #ffffff;
+    max-width: 450px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Rule 3: Main title style */
+h1 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+/* Rule 4: Form element wrapping group */
+.input-group {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Rule 5: User input text field */
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px 0 0 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+/* Rule 6: Submit button */
+button {
+    width: 80px;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Rule 7: Button hover action effect */
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Rule 8: Front-end validation error message */
+.error-text {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px;
+    text-align: left;
+}
+
+/* Rule 9: Weather forecast result display block */
+.weather-result {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #f1f2f6;
+}
+
+/* Rule 10: Specific style for main temperature */
+.temp {
+    font-size: 42px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 10px 0;
+}
+
+/* Rule 11: Specific style for weather status text */
+.desc {
+    font-size: 18px;
+    text-transform: capitalize;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+/* Rule 12: Hidden helper selector for toggling via JS */
+.hidden {
+    display: none;
+}

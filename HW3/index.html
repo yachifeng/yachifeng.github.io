@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card-container">
+        <h1>Global Weather Explorer</h1>
+        
+        <form id="weatherForm">
+            <div class="input-group">
+                <input type="text" id="cityInput" placeholder="Enter city name (e.g., Tokyo, London)">
+                <button type="submit">Search</button>
+            </div>
+            <p id="errorMessage" class="error-text"></p>
+        </form>
+
+        <div id="weatherResult" class="weather-result hidden">
+            <h2 id="cityName">City Name</h2>
+            
+            <div class="weather-info">
+                <span id="weatherIcon" style="font-size: 50px; display: block; margin: 10px 0;"></span>
+                <p id="temperature" class="temp">--°C</p>
+            </div>
+            
+            <p id="description" class="desc">Condition</p>
+            
+            <div class="details">
+                <p>Humidity: <span id="humidity">--</span>%</p>
+                <p>Wind Speed: <span id="windSpeed">--</span> m/s</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
